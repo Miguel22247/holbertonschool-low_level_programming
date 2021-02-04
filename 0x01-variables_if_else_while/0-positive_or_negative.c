@@ -16,12 +16,12 @@ if (n > 0)
 {
 printf("is positive\n");
 }
-else if
-{
-printf("is zero\n");
-}
 else
 {
 printf("is negative\n");
 return (0);
+}
+else if
+{
+printf("is zero\n");
 }
