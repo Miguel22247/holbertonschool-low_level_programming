@@ -5,7 +5,7 @@
  * @two: second number input
  * Return: one + two
  */
-int add(int one, int two);
+int add(int one, int two)
 {
-  return(one, two);
+	return (one + two);
 }
