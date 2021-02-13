@@ -15,4 +15,3 @@ char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 
 #endif /* HOLBERTON_H */
-2021 GitHub, Inc.
