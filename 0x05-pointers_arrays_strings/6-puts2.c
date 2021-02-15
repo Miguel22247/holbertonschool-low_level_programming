@@ -8,18 +8,12 @@
  */
 void puts2(char *str)
 {
-<<<<<<< HEAD
 	int n = 0;
 
 	for (; str[n] != '\0'; n++)
-=======
-	int i = 0;
-
-	for (; str[i] != '\0'; i++)
->>>>>>> b60882d41f606691ab0f5b05ed37928c77a1f33f
 	{
-		if ((i % 2) == 0)
-			_putchar(str[i]);
+		if ((n % 2) == 0)
+			_putchar(str[n]);
 		else
 			continue;
 	}
