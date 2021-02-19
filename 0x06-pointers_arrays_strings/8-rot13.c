@@ -14,3 +14,19 @@ char *rot13(char *n)
 		's', 'G', 'T', 'g', 't', 'H', 'U', 'h', 'u', 'I', 'V', 'i', 'v',
 		'J', 'W', 'j', 'w', 'K', 'X', 'k', 'x', 'L', 'Y', 'l', 'y', 'M',
 		'Z', 'm', 'z'};
+
+	while (n[i] != '\0')
+	{
+		for (x = 0; x <= 51; x++)
+		{
+			if (n[i] == toswap[x])
+			{
+				n[i] = n[i] + rot_c;
+				x = 51;
+			}
+			rot_c = rot_c * -1;
+		}
+		i++;
+	}
+	return (n);
+}
