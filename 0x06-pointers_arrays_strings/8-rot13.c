@@ -8,25 +8,29 @@
  */
 char *rot13(char *n)
 {
-	int x, rot_c = 13, i = 0;
-	char toswap[] = {'A', 'N', 'a', 'n', 'B', 'O', 'b', 'o', 'C', 'P',
-		'c', 'p', 'D', 'Q', 'd', 'q', 'E', 'R', 'e', 'r', 'F', 'S', 'f',
-		's', 'G', 'T', 'g', 't', 'H', 'U', 'h', 'u', 'I', 'V', 'i', 'v',
-		'J', 'W', 'j', 'w', 'K', 'X', 'k', 'x', 'L', 'Y', 'l', 'y', 'M',
-		'Z', 'm', 'z'};
+	char* word = argv[1];
+    int key = 13;
 
-	while (n[i] != '\0')
-	{
-		for (x = 0; x <= 51; x++)
-		{
-			if (n[i] == toswap[x])
-			{
-				n[i] = n[i] + rot_c;
-				x = 51;
-			}
-			rot_c = rot_c * -1;
-		}
-		i++;
-	}
-	return (n);
+    // all the letters in the first argument 
+    for (int n = 0, len = strlen(word); n < len; n++)
+    {
+        int currentLetter = word[n];
+
+        char cipher = currentLetter + key;
+
+        // make sure the next letter isn't over 26 or it isn't a ascii letter
+        // if it is, do %26
+        if ((currentLetter - 'a') + key > 26)
+        {
+            key = (currentLetter - 'a') + key) % 26;
+            cipher = 'a' + key;
+        }
+
+        printf("%c", cipher);
+        // reset the key and do the next letter
+        key = 13;
+        }
+    }
+    printf("\n");
+    return 0;
 }
