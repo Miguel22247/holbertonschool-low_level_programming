@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * rot13 - qwqerwqerwqerwqer
- * @s: werwqreqwerwqerw
- * Return:sadfsadf
+ * rot13 - encode using rot13
+ * @s: variable
+ * Return: Always 0 (Success)
  */
 char *rot13(char *s)
 {
