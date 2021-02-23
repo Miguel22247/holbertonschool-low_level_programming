@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * _memcpy - a function that copy memory area
- * @dest: copy to
- * @src: copy from
- * @n: bytes
+ * _memcpy - Entry point
+ * @dest: input
+ * @src: input
+ * @n: input
+ * Return: Always 0 (Success)
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
