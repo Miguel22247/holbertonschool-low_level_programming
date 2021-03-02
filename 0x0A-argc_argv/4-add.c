@@ -1,6 +1,6 @@
-#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 /**
  * main - Entry Point
  * @argc: arguments
@@ -9,21 +9,21 @@
  */
 int main(int argc, char *argv[])
 {
-  int i, sum = 0;
+	int i, sum = 0;
 
-  if (argc < 1)
-    return (0);
+	if (argc < 1)
+		return (0);
 
-  for (i = 0; i < argc; i++)
-    {
-      if (!atoi(argv[i]))
+	for (i = 1; i < argc; i++)
 	{
-	  printf("%s\n", "Error");
-	  return (1);
+		if (!atoi(argv[i]))
+		{
+			printf("%s\n", "Error");
+			return (1);
+		}
+		sum += atoi(argv[i]);
 	}
-      sum += atoi(argv[i]);
-    }
-  printf("%d\n", sum);
+	printf("%d\n", sum);
 
-  return (0);
+	return (0);
 }
