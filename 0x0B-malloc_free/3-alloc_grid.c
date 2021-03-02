@@ -36,5 +36,5 @@ int **alloc_grid(int width, int height)
 			iarray[i][n] = 0;
 		}
 	}
-	return(iarray);
+	return (iarray);
 }
