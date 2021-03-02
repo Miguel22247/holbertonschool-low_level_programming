@@ -2,44 +2,42 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
- * str_concat - get ends of input and add together for size
- * @s1: input one to concat
- * @s2: input two to concat
- * Return: concat of s1 and s2
+ * str_concat - concatenates 2 strings
+ *
+ * @s1: first string
+ * @s2: string to add to end of of first string
+ *
+ * Return: pointer to newly allocated string concatenation
  */
 char *str_concat(char *s1, char *s2)
 {
-	int end1, end2, i = 0;
-	char *array;
+	unsigned int size1 = 0, size2 = 0;
+	char *ptr, *ret;
 
-	if (s1 == NULL || s2 == NULL)
-		s1 = s2 = "";
+	ptr = s1;
+	if (s1)
+		while (*ptr++)
+			size1++;
+	else
+		s1 = "";
 
-	for (end1 = 0; end1 <= *s1; end1++)
-	{
-	}
+	ptr = s2;
+	if (s2)
+		while (*ptr++)
+			size2++;
+	else
+		s2 = "";
 
-	for (end2 = 0; end2 <= *s2; end2++)
-	{
-	}
-
-	array = malloc(sizeof(char) * (end1 + end2 + 1));
-
-	if (array == NULL)
+	ret = malloc(size1 + size2 + 1);
+	if (!ret)
 		return (NULL);
 
+	ptr = ret;
 	while (*s1)
-	{
-		array[i] = *s1;
-		i++;
-		s1++;
-	}
-
+		*ptr++ = *s1++;
 	while (*s2)
-	{
-		array[i] = *s2;
-		i++;
-		s2++;
-	}
-	return (array);
+		*ptr++ = *s2++;
+	*ptr = 0;
+
+	return (ret);
 }
