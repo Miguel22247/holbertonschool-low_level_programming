@@ -1,12 +1,13 @@
-#include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
-
+#include <stdio.h>
+#include "holberton.h"
 /**
- * string_nconcat - concatenates two strings
- * @s1: input string one
- * @s2: input string two
- * Return: concat of two strings
+ * string_nconcat - len of 1st str, len of 2nd str, if n < 2nd, 2nd = n
+ * 2nd + 1st = total len, malloc + null byte, loop to insert into temp arr
+ * @s1: input one
+ * @s2: input two
+ * @n: s2's number of bytes
+ * Return: 0
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -22,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 	}
 
-	for(j = 0; s2[i] != '\0'; j++)
+	for (j = 0; s2[j] != '\0'; j++)
 	{
 	}
 
