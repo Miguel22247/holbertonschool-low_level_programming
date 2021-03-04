@@ -2,48 +2,46 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * string_nconcat - len of 1st str, len of 2nd str, if n < 2nd, 2nd = n
- * 2nd + 1st = total len, malloc + null byte, loop to insert into temp arr
- * @s1: input one
- * @s2: input two
- * @n: s2's number of bytes
- * Return: 0
+ * string_nconcat - concatenates 2 strings into a new string,
+ * taking the first n from string 2. If n>strlen(s2),
+ * use whole string s2.
+ *
+ * @s1: first string
+ * @s2: second string
+ * @n: number of characters to take from second string
+ *
+ * Return: new string, or null on failure
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *arr;
-	unsigned int i, j, co, co_2;
+	unsigned int len1, len2, i;
+	char *ptr, *ret;
 
-	if (s1 == NULL)
+	if (!s1)
 		s1 = "";
-	if (s2 == NULL)
+	if (!s2)
 		s2 = "";
 
-	for (i = 0; s1[i] != '\0'; i++)
+	for (len1 = 0, ptr = s1; *ptr; ptr++)
+		len1++;
+	for (len2 = 0, ptr = s2; *ptr; ptr++)
+		len2++;
+	if (n > len2)
+		n = len2;
+
+	ret = malloc((len1 + n + 1) * sizeof(char));
+	if (!ret)
+		return (0);
+
+	ptr = ret;
+	while (*s1)
+		*ptr++ = *s1++;
+	i = 0;
+	while (i < n)
 	{
+		*ptr++ = s2[i++];
 	}
+	*ptr = 0;
 
-	for (j = 0; s2[j] != '\0'; j++)
-	{
-	}
-
-	if (n < j)
-		j = n;
-
-	j += i;
-	arr = malloc(sizeof(char *) * (j + 1));
-
-	if (arr == NULL)
-		return (NULL);
-
-	for (co = 0; co < i; co++)
-		arr[co] = s1[co];
-	for (co_2 = 0; co < j; co_2++)
-	{
-		arr[co] = s2[co_2];
-		co++;
-	}
-	co++;
-	arr[co] = '\0';
-	return (arr);
+	return (ret);
 }
