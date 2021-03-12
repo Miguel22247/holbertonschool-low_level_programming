@@ -24,6 +24,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 1; i < n; i++)
 		printf("%s%d", sep, va_arg(list, int));
 	printf("\n");
-	
 	va_end(list);
 }
