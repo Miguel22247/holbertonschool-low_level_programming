@@ -57,4 +57,4 @@ Share your blog post at least on LinkedIn
 Please, remember that these blogs must be written in English to further your technical ability in a variety of settings
 When done, please add all urls below (blog post, LinkedIn post, etc.)
 
-[Blog("https://minipachru.medium.com/what-happens-when-you-type-gcc-main-c-e94aa74da0dc")]
+Blog: https://minipachru.medium.com/what-happens-when-you-type-gcc-main-c-e94aa74da0dc
