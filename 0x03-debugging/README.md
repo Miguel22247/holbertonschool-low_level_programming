@@ -110,7 +110,7 @@ Line count will not be checked for this task.
 This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.
 
 <code>
-  #include <stdio.h>
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -139,7 +139,7 @@ int main(void)
 } </code>
 
 <code>
-  #include "holberton.h"
+#include "holberton.h"
 
 /**
 * convert_day - converts day of month to day of year, without accounting
