@@ -18,14 +18,14 @@ int main(void)
         return (0);
 }
 
-#ifndef HOLBERTON_H
+'''#ifndef HOLBERTON_H
 #define HOLBERTON_H
 
 #include <stdio.h>
 
 void positive_or_negative(int i);
 
-#endif /* HOLBERTON_H */
+#endif /* HOLBERTON_H */'''
 
 Based on the main.c file above, create a file named 0-main.c. This file must test that the function positive_or_negative() gives the correct output when given a case of 0.
 
