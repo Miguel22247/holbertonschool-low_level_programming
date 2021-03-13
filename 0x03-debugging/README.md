@@ -1,13 +1,8 @@
 # 0. Multiple mains
 In most projects, we often give you only one main file to test with. For example, this main file is a test for a postitive_or_negative() function similar to the one you worked with in an earlier C project:
-<<<<<<< HEAD
 
 
 ```#include "holberton.h"
-=======
-```
-#include "holberton.h"
->>>>>>> 7a6d05f6e388197fd9e5562626fafc19249e1cc8
 
 /**
 * main - tests function that prints if integer is positive or negative
@@ -22,13 +17,8 @@ int main(void)
         positive_or_negative(i);
 
         return (0);
-<<<<<<< HEAD
 } ```
 
-=======
-}
-```
->>>>>>> 7a6d05f6e388197fd9e5562626fafc19249e1cc8
 ```
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
@@ -37,12 +27,7 @@ int main(void)
 
 void positive_or_negative(int i);
 
-<<<<<<< HEAD
 #endif /* HOLBERTON_H */ ```
-=======
-#endif /* HOLBERTON_H */ 
-```
->>>>>>> 7a6d05f6e388197fd9e5562626fafc19249e1cc8
 
 Based on the main.c file above, create a file named 0-main.c. This file must test that the function positive_or_negative() gives the correct output when given a case of 0.
 
@@ -59,10 +44,6 @@ You do not have to compile with -Wall -Werror -Wextra -pedantic for this task.
 
 # 2. 0 > 972?
 This program prints the largest of three integers.
-<<<<<<< HEAD
-
-=======
->>>>>>> 7a6d05f6e388197fd9e5562626fafc19249e1cc8
 ```
 #include <stdio.h>
 #include "holberton.h"
@@ -86,17 +67,10 @@ int main(void)
         printf("%d is the largest number\n", largest);
 
         return (0);
-<<<<<<< HEAD
 } ```
 
 ```
   #include "holberton.h"
-=======
-}
-```
-```
-#include "holberton.h"
->>>>>>> 7a6d05f6e388197fd9e5562626fafc19249e1cc8
 
 /**
  * largest_number - returns the largest of 3 numbers
@@ -124,12 +98,8 @@ int largest_number(int a, int b, int c)
     }
 
     return (largest);
-<<<<<<< HEAD
-} ```
-=======
 }
 ```
->>>>>>> 7a6d05f6e388197fd9e5562626fafc19249e1cc8
 ? That’s definitely not right.
 
 Fix the code in 2-largest_number.c so that it correctly prints out the largest of three numbers, no matter the case.
@@ -138,14 +108,8 @@ Line count will not be checked for this task.
 
 # 3. Leap year
 This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.
-<<<<<<< HEAD
-
-```
-  #include <stdio.h>
-=======
 ```
 #include <stdio.h>
->>>>>>> 7a6d05f6e388197fd9e5562626fafc19249e1cc8
 #include "holberton.h"
 
 /**
@@ -171,18 +135,10 @@ int main(void)
     print_remaining_days(month, day, year);
 
     return (0);
-<<<<<<< HEAD
-}```
-
-```
-  #include "holberton.h"
-=======
 }
 ```
 ```
 #include "holberton.h"
->>>>>>> 7a6d05f6e388197fd9e5562626fafc19249e1cc8
-
 /**
 * convert_day - converts day of month to day of year, without accounting
 * for leap year
@@ -235,6 +191,7 @@ int convert_day(int month, int day)
 
 }
 ```
+```
 #include <stdio.h>
 #include "holberton.h"
 
@@ -271,13 +228,9 @@ void print_remaining_days(int month, int day, int year)
             printf("Remaining days: %d\n", 365 - day);
         }
     }
-<<<<<<< HEAD
-}```
-
-=======
 }
 ```
->>>>>>> 7a6d05f6e388197fd9e5562626fafc19249e1cc8
+
 Output looks good for 04/01/1997! Let’s make a new main file 3-main_b.c to try a case that is a leap year: 02/29/2000.
 
 Fix the print_remaining_days() function so that the output works correctly for all dates and all leap years.
