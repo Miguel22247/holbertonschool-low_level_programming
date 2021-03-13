@@ -232,13 +232,8 @@ int convert_day(int month, int day)
             break;
     }
     return (day);
-<<<<<<< HEAD
-}```
 
-=======
 }
-```
->>>>>>> 7a6d05f6e388197fd9e5562626fafc19249e1cc8
 ```
 #include <stdio.h>
 #include "holberton.h"
