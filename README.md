@@ -1,4 +1,4 @@
-# Hi, welcome to the first repository in C repo
+# Hi, welcome to the first repository in C
 
 # Projects
 ## 0x00. C - Hello, World
