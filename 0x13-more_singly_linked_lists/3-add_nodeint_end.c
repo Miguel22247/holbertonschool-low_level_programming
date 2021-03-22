@@ -10,19 +10,14 @@
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	int i, n = 0;
-	list_t *new;
-	list_t *temp;
+	listint_t *new;
+	listint_t *temp;
 
-	new = malloc(sizeof(list_t));
+	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
 
-	for (i = 0; str[i] != '\0'; i++)
-		n++;
-
-	new->len = i;
-	new->str = strdup(str);
+	new->n = n;
 	new->next = NULL;
 
 	if (*head == NULL)
