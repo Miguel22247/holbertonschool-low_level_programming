@@ -5,6 +5,7 @@
  * add_nodeint_end - a function that adds a new node
  * at the end of a list_t list.
  * @head: input
+ * @n: a variable
  * Return: 0
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
