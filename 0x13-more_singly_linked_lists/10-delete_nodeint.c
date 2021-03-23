@@ -1,11 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
-/**
- * delete_nodeint_at_index - Entry Point
- * @head: head
- * @index: index
- * Return: 0
- */
+
 /**
  * delete_nodeint_at_index - deletes a listint node at index
  *
