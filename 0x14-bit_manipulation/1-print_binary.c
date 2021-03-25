@@ -23,7 +23,7 @@ void print_binary(unsigned long int n)
 
 	if (printbit == 0)
 		write(1, &c, 1);
-		
+
 	while (printbit)
 	{
 		if (printbit & n)
