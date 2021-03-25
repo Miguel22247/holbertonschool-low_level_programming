@@ -13,4 +13,3 @@
 	*n = *n & ~(1ul << index);
 	return (1);
 }
-}
