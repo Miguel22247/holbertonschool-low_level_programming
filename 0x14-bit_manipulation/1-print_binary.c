@@ -1,9 +1,4 @@
 #include "holberton.h"
-/**
- * print_binary - Entry Point
- * @n: dec input
- * Return: 0
- */
 #include <unistd.h>
 #include <limits.h>
 /**
