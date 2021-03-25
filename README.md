@@ -39,4 +39,5 @@ Repo: [Here](https://github.com/Miguel22247/holbertonschool-low_level_programmin
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-low_level_programming/tree/main/0x12-singly_linked_lists)
 ## 0x13. C - More singly linked lists
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-low_level_programming/tree/main/0x13-more_singly_linked_lists)
-
+## 0x14. C - Bit Manipulation
+Repo: [Here](https://github.com/Miguel22247/holbertonschool-low_level_programming/tree/main/0x14-bit_manipulation)
