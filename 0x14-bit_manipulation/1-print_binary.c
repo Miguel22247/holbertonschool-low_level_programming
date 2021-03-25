@@ -22,7 +22,7 @@ void print_binary(unsigned long int n)
 		temp = temp >> 1;
 	}
 
-	for (count = i - 1; count >= 0; count --)
+	for (count = i - 1; count >= 0; count--)
 	{
 		k = n >> count;
 		if (k & 1)
@@ -31,4 +31,3 @@ void print_binary(unsigned long int n)
 			printf("0");
 	}
 }
-	
