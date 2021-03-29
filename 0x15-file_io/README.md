@@ -1,9 +1,9 @@
-0x15. C - File I/O
+# 0x15. C - File I/O
 
-# Learning Objectives
+## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-## General
+### General
 Look for the right source of information online
 How to create, open, close, read and write files
 What are file descriptors
@@ -14,9 +14,9 @@ What are file permissions, and how to set them when creating a file with the ope
 What is a system call
 What is the difference between a function and a system call
 
-# Requirements
+## Requirements
 
-## General
+### General
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 14.04 LTS
 * Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
@@ -36,9 +36,9 @@ What is the difference between a function and a system call
 * Tip: always prefer using symbolic constants (POSIX) vs numbers when it makes sense. For instance read(STDIN_FILENO, ... vs read(0, ...
 
 
-# Tasks
+## Tasks
 
-## 0. Tread lightly, she is near
+### 0. Tread lightly, she is near
 Write a function that reads a text file and prints it to the POSIX standard output.
 
 * Prototype: ```ssize_t read_textfile(const char *filename, size_t letters);```
@@ -48,7 +48,7 @@ Write a function that reads a text file and prints it to the POSIX standard outp
 * if filename is NULL return 0
 * if write fails or does not write the expected amount of bytes, return 0
 
-# 1. Under the snow
+### 1. Under the snow
 
 Create a function that creates a file.
 
@@ -60,7 +60,7 @@ Create a function that creates a file.
 * if ```filename``` is ```NULL``` return ```-1```
 * if ```text_content``` is ```NULL``` create an empty file
 
-# 2. Speak gently, she can hear
+### 2. Speak gently, she can hear
 Write a function that appends text at the end of a file.
 
 * Prototype: ```int append_text_to_file(const char *filename, char *text_content);```
@@ -70,7 +70,7 @@ Write a function that appends text at the end of a file.
 * If filename is ```NULL``` return ```-1```
 * If ```text_content``` is ```NULL```, do not add anything to the file. Return ```1``` if the file exists and ```-1``` if the file does not exist or if you do not have the required permissions to write the file
 
-# 3. cp
+### 3. cp
 
 Write a program that copies the content of a file to another file.
 
