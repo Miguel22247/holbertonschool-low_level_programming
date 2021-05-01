@@ -2,8 +2,8 @@
 
 /**
  * get_dnodeint_at_index - get the node of a linked list
- * @head: the head of the list\
- * @index: index wanted
+ * @head: the head of the list
+ * @index: index
  * Return: data of the nth node
 */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
