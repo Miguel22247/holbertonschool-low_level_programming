@@ -22,3 +22,6 @@
 * The first line of all your files should be exactly #!/bin/bash
 * A README.md file, at the root of the folder of the project, describing what each script is doing
 * All your files must be executable
+
+# Author
+* Miguel Pacheco - [Miguel22247](https://github.com/Miguel22247)
