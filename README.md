@@ -1,4 +1,4 @@
-# Hi, welcome to my first repository in C
+# Holberton School Low Level Programming
 
 # Projects
 ## 0x00. C - Hello, World
