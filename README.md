@@ -45,3 +45,5 @@ Repo: [Here](https://github.com/Miguel22247/holbertonschool-low_level_programmin
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-low_level_programming/tree/main/0x15-file_io)
 ## 0x17. C - Doubly linked lists
 Repo: [Here](https://github.com/Miguel22247/holberton-low_level_programming/tree/main/0x17-double_linked_lists)
+## 0x1A. C - Hash tables
+Repo: [Here](https://github.com/Miguel22247/holbertonschool-low_level_programming/tree/main/0x1A-hash_tables)
