@@ -35,7 +35,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			free(temporal_value);
 			return(1);
 		}
-		temporal = temporal_value->next;
+		temporal = temporal->next;
 	}
 	/* If a collision doesn't exits, insert node */
 	new = malloc(sizeof(hash_node_t));
