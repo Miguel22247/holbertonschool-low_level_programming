@@ -12,14 +12,14 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (!key)
 		return (NULL);
-	
+
 	if (ht)
 	{
 		index = key_index((const unsigned char *)key, ht->size);
 		temporal = ht->array[index];
 		while (temporal)
 		{
-			if(strcmp(temporal->key, key) == 0)
+			if( strcmp(temporal->key, key) == 0)
 				return (temporal->value);
 			temporal = temporal->next;
 		}
