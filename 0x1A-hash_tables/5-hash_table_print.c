@@ -18,8 +18,8 @@ void hash_table_print(const hash_table_t *ht)
 		temporal = ht->array[l];
 		while (temporal)
 		{
-			printf("'%s': '%s'", temporal->key, temp->value);
-			if (ht->array[i + 1] == NULL)
+			printf("'%s': '%s'", temporal->key, temporal->value);
+			if (!ht->array[l + 1])
 				break;
 			printf(", ");
 			temporal = temporal->next;
