@@ -7,7 +7,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int l, m = 0;
-	hash_node_t *temporal = NULL;
+	hash_node_t *temporal;
 
 	if (!ht || !ht->array)
 		return;
