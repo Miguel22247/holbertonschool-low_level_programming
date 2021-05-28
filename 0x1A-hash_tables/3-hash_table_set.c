@@ -10,13 +10,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = 0;
 	char *temporal_value = NULL;
-	hash_node_t *temporal = NULL;
-	hash_node_t *new = NULL;
+	hash_node_t *temporal = NULL, *new = NULL;
 
 	if (!ht || !ht->array || !value)
-		return(0);
-	
-	if(strlen(key) == 0 || !key)
+		return (0);
+
+	if (strlen(key) == 0 || !key)
 		return (0);
 	temporal_value = strdup(value);
 	if (!temporal_value)
@@ -33,7 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			temporal->value = temporal_value;
 			temporal->value = strdup(value);
 			free(temporal_value);
-			return(1);
+			return (1);
 		}
 		temporal = temporal->next;
 	}
