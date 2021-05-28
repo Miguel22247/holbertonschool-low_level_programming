@@ -16,7 +16,7 @@ void hash_table_delete(hash_table_t *ht)
 	}
 
 
-	while (i < ht->size)
+	while (l < ht->size)
 	{
 		temporal = next_temporal;
 		while (temporal)
