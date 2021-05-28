@@ -5,7 +5,7 @@
 * @key: key
 * Return: an element
 */
-har *hash_table_get(const hash_table_t *ht, const char *key)
+char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int index = 0;
 	hash_node_t *temporal = NULL;
