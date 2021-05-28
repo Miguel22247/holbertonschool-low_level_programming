@@ -6,25 +6,27 @@
 */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i = 0;
+	unsigned long int l, m = 0;
 	hash_node_t *temporal = NULL;
 
-	if (!ht)
+	if (!ht || !ht->array)
+		return;
+
+	while(!ht->array)
 		return;
 
 	printf("{");
-	while (i < ht->size)
+	for (l = m; i < ht->size; l++)
 	{
 		temporal = ht->array[i];
 		while (temporal)
 		{
-			printf("'%s' : '%s'", temporal->key, temporal->value);
-			if (!ht->array[i + 1])
-				break;
-			printf(", ");
+			if (l == m)
+				printf("'%s': '%s'", temporal->key, temporal->value);
+			else
+				printf(", '%s': '%s'", temporal->key, temporal->value);
 			temporal = temporal->next;
 		}
-		i++;
 	}
 	printf("}\n");
 }
