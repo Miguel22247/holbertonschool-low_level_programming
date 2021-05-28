@@ -19,7 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 		while (temporal)
 		{
 			printf("'%s': '%s'", temporal->key, temp->value);
-			if (!ht->array[i + 1])
+			if (ht->array[i + 1] == NULL)
 				break;
 			printf(", ");
 			temporal = temporal->next;
