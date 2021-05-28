@@ -19,9 +19,9 @@ har *hash_table_get(const hash_table_t *ht, const char *key)
 		temp = ht->array[index];
 		while (temp)
 		{
-			if(strcmp(temp->key, key) == 0)
-				return (temp->value);
-			temp = temp->next;
+			if(strcmp(temporal->key, key) == 0)
+				return (temporal->value);
+			temporal = temporal->next;
 		}
 	}
 	return (NULL);
