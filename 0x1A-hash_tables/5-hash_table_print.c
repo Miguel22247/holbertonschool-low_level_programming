@@ -1,32 +1,30 @@
 #include "hash_tables.h"
 /**
 * hash_table_print - prints the hash table
-* @ht: hash tables\
+* @ht: hash tables
 * Return: a dictionary with the format of the hash table
 */
 void hash_table_print(const hash_table_t *ht)
 {
-	hash_node_t *temporal;
-	unsigned long int l, m = 0;
+	unsigned long int i = 0;
+	hash_node_t *temporal = NULL;
 
-	if (!ht || !ht->array)
+	if (!ht)
 		return;
 
-	while (!ht->array[m])
-		m++;
-
 	printf("{");
-	for (l = m; l < ht->size; m++)
+	while (i < ht->size)
 	{
-		temporal = ht->array[l];
+		temporal = ht->array[i];
 		while (temporal)
 		{
-			if (l == m)
-				printf("'%s': '%s'", temporal->key, temporal->value);
-			else
-				printf(", '%s': '%s'", temporal->key, temporal->value);
+			printf("'%s' : '%s'", temporal->key, temporal->value);
+			if (!ht->array[i + 1])
+				break;
+			printf(", ");
 			temporal = temporal->next;
 		}
+		i++;
 	}
 	printf("}\n");
 }
