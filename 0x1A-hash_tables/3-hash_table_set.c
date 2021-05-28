@@ -30,8 +30,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strcmp(temporal->key, key) == 0)
 		{
 			free(temporal->value);
-			temp->value = temporal_value;
-			temp->value = strdup(value);
+			temporal->value = temporal_value;
+			temporal->value = strdup(value);
 			free(temporal_value);
 			return(1);
 		}
