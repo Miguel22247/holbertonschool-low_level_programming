@@ -12,7 +12,7 @@ void hash_table_print(const hash_table_t *ht)
 	if (!ht || !ht->array)
 		return;
 
-	while(!ht->array)
+	while (!ht->array)
 		return;
 
 	printf("{");
