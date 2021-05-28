@@ -16,7 +16,7 @@ void hash_table_print(const hash_table_t *ht)
 		return;
 
 	printf("{");
-	for (l = m; i < ht->size; l++)
+	for (l = m; l < ht->size; l++)
 	{
 		temporal = ht->array[i];
 		while (temporal)
