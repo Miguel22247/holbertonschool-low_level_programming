@@ -1,5 +1,8 @@
 # Holberton School Low Level Programming
 
+## NOTE:
+If you are a Holberton School or ALX Student and want to take this repo as Reference please star the repo 😊
+
 # Projects
 ## 0x00. C - Hello, World
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-low_level_programming/tree/main/0x00-hello_world)
