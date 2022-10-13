@@ -1,7 +1,7 @@
 # Holberton School Low Level Programming
 
 ## NOTE:
-If you are a Holberton School or ALX Student and want to take this repo as Reference please star the repo 😊
+If you are a Holberton School or ALX Student and want to take this repo as Reference please star the repo 😊 **DON'T FORK THIS REPO SINCE IT'S NOT ALLOWED BY HOLBERTON SCHOOL OR ALX RULES**
 
 # Projects
 ## 0x00. C - Hello, World
